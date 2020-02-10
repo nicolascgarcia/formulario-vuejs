@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    background-color: #fcfcfc;
+}
+
+main, header, footer{
+    font-family: 'Comfortaa', cursive!important;
+}
+
+
+
+
+
+
+/*---------------------------------------------------- Footer ------------------------------------------------------*/
+.overlay{
+    background-color: #080f2593;
+    color: white;
+}
+
+footer p{
+    width: max-content;
+}
+
+footer p > a{
+    padding:.8rem;
+    color: white;
+    border-radius: 5px;
+
+}
+
+footer p > a:hover{
+    text-decoration: none;
+    color:#ff7212;
+    background-color: #fff;
+    font-weight: bold;
+    /*color:rgb(255, 251, 0);*/
+}
+
+.bg-footer{
+    background-image: url(../img/maquina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-copyright, .footer-copyright > a{
+    color: #fff;
+}
+/*--------------------------------------------------- //Footer -----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------- Navbar ------------------------------------------------------*/
+
+.nav-desce{
+    transition-duration: .3s;
+    background-image: linear-gradient(to bottom, #ff7212, #ff770e, #ff7c09, #ff8004, #ff8500);
+    box-shadow: 4px 4px 9px 4px rgba(0, 0, 0, 0.452);
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li a{
+    margin-left: 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: white;
+}
+
+nav li a:hover{
+    color: #ff7212;
+    transition: .5s;
+    /*color:rgb(255, 251, 0);*/
+    background-color:#fff;
+    /*background-color: rgb(255, 208, 0);*/
+    
+}
+/*--------------------------------------------------- //Navbar -----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------- Index.html ---------------------------------------------------*/
+.background-meia-boca{
+    background-color: #ff7212;
+}
+
+.laranja {
+    border-color: #ff7212;
+    color: #ff7212;
+}
+
+.laranja:hover {
+    transition: .5s;
+    background-color: #ff7212;
+    color: white;
+}
+
+.header-slide{
+    display: flex;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #fff400, #ffe400, #ffd500, #ffc606, #ffb712);
+    /*background-color:rgb(255, 196, 0);*/
+}
+
+.header-principal{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 24pt;
+}
+
+.subtitulo{
+    font-size: 18pt!important;
+    color: #ff7212!important;
+    border: #ff7212;
+}
+
+.main-lado-a-lado{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+/*------------------------------------------------- //Index.html ---------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------Landing pages 100vh-----------------------------------------------*/
+.landing-surpreso{
+    background: #ff7212;
+    background: linear-gradient(-354.5deg, #ffc606 0%, #ffc606   50.9%, #fff 51%, #fff 100%);
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    /*min-height: 100vh;*/
+    z-index:2;
+}
+
+.box-texto-surpreso{
+    padding:5rem 5rem 5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-surpreso{
+    color:#ff7212;
+    justify-content: flex-start;
+}
+
+.texto-pequeno-surpreso{
+    justify-content: flex-end;
+    line-height: 2.5rem;
+}
+/*--------------------------------------------- //Landing 100vh --------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------Sobre Empresa-------------------------------------------------*/
+.sobre{
+    background-image: linear-gradient(to right top, #fff400, #ffe400, #ffd500, #ffc606, #ffb712);
+
+}
+
+.container-sobre{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container-sobre figure{
+    margin-bottom: 0px;
+}
+
+.div-depoimentos{
+    height: 100vh!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: pink;*/
+}
+
+.div-depoimentos{
+    height: 100%;
+}
+
+.cartao{
+
+    padding: 1rem;
+    height: 280px;
+    width:500px!important;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -1rem 0 2rem rgba(0, 0, 0, 0.432);
+    /*margin-left: -50px;*/
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.cartao:not(:first-child) {
+    margin-left: -50px;
+}
+
+.cartao:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.cartao:hover ~ .cartao {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.form-contato{
+    background-color:rgb(1, 20, 20);
+    height: 100vh;
+    padding-bottom:5rem;
+}
+
+.quadro-contato{
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: white;
+    border-radius:15px;
+    box-shadow: 4px 4px 9px 5px #00000030;
+}
+
+
+/*---------------------------------------- //Sobre Empresa-------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------Perguntas Frequentes-------------------------------------------------*/
+.invisivel{
+    display: none;
+}
+
+.pergunta-resposta {
+    overflow: auto;
+    max-height: 47rem;
+    background-color: white;
+    border-radius:15px;
+    box-shadow: 4px 4px 9px 5px #00000030;
+}
+
+.pergunta-resposta::-webkit-scrollbar-track {
+    background-color: rgba(255, 0, 0, 0);
+}
+.pergunta-resposta::-webkit-scrollbar {
+    width: 8px;
+    border-radius:15px;
+    background: rgba(255, 0, 0, 0);
+}
+.pergunta-resposta::-webkit-scrollbar-thumb {
+    background: #dad7d700;
+}
+
+.resposta{
+    font-size: 10pt;
+}
+
+.pergunta{
+    font-size: 16pt;
+    color: #ff7212!important;
+    border: #ff7212;
+}
+
+/*---------------------------------------- //Perguntas Frequentes-------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------- Media Queries ---------------------------------------------------*/
+@media screen and (max-width:480px){
+    .inverte-mobile{
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .box-texto-surpreso{
+        padding: 0!important;
+    }
+
+    .titulo-surpreso{
+        text-align: center;
+        padding:5px;
+    }
+
+    .texto-pequeno-surpreso{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-left:1rem;
+        padding-right:1rem;
+        font-size: 20px;
+        color: #ff7212;
+        padding-bottom: 8rem;
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .vira-mobile{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .box-texto-simula{
+        padding:1rem;
+    }
+
+    .form-simula{
+        margin-top: 1rem;
+    }
+
+    .titulo-simula{
+        margin-top:5rem;
+        margin-bottom:3.5rem;
+    }
+
+    .resposta-simula{
+        margin-bottom:1rem;
+    }
+
+    .form-contato{
+        padding-top: 2rem;
+        padding-bottom:2rem;
+        height: auto;
+    }
+  }
+
+/*--------------------------------------------- //Media Queries --------------------------------------------------*/

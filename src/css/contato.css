@@ -1,0 +1,55 @@
+.bg-contato {
+    height: 100%;
+    background-image: url(../img/contato.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-over{
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background-color: #ff7112ce;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.formulario {
+    justify-content: center;
+
+}
+
+    .formulario h1 {
+        color:white;
+    }
+
+    .formulario form label{
+        width: max-content;
+        font-weight: 500;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .formulario form input, textarea {
+        box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.233);
+    }
+
+@media only screen and (max-width:750px) {
+
+    .formulario form {
+        text-align: center;
+    }
+
+    .form-group {
+        margin: 0 5%;
+    }
+
+}
