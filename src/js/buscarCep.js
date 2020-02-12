@@ -7,7 +7,7 @@ function buscarCep() {
     console.log(tamanho)
     
     if (tamanho == 9) {
-        fetch('https://viacep.com.br/ws/'+valor+'/json/')
+         fetch('https://viacep.com.br/ws/'+valor+'/json/')
         .then(function (response) {
             return response.json()
         })
@@ -16,17 +16,17 @@ function buscarCep() {
 
                 console.log(val)
 
+                if (val.erro == true) {return erro()} else {
+
                 let localidade = document.querySelector("#cidade")
                 localidade.setAttribute('value', val.localidade)
         
 
                 let estado = document.querySelector("#estado")
-                estado.setAttribute('value', val.uf)
+                estado.setAttribute('value', val.uf) }
 
         })
-    }  
-    
-    if (tamanho != 9) {
+    } else {
         let localidade = document.querySelector("#cidade")
         localidade.setAttribute('value', 'buscando...')
         
@@ -40,11 +40,10 @@ function buscarCep() {
 
 function erro() {
 
-    if (tamanho == 9) {
     let localidade = document.querySelector("#cidade")
-    localidade.setAttribute('value', ' CEP nao encontrado')
+    localidade.setAttribute('value', ' CEP invalido')
     
     let estado = document.querySelector("#estado")
-    estado.setAttribute('value', '')
-    }
+    estado.setAttribute('value', '...')
+    
 }
